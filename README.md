@@ -97,9 +97,12 @@ Given an input spectral image, the model identifies noise regions and produces s
 - **Overlay visualization**: noise regions highlighted on the original spectral image  
 - **Coordinate outputs**: exported pixel coordinates of detected noise regions (CSV format)  
 
+For deployment on Apple platforms, the YOLO model can be converted to **Apple Core ML** format for integration into Xcode-based applications.
+
 Example results are provided to illustrate the segmentation performance, including predicted masks and overlay visualizations.
 
-**Note:** The model and outputs provided here represent a **partial demonstration**. The full training pipeline and complete datasets are not included in this repository.
+**Note:** The model provided here represents a **partial pretrained version** for demonstration. The full training configuration, complete datasets, and fully trained model weights are not included in this repository.
+ban
 #### Example Segmentation Results
 
 The figure shows representative segmentation results of noise regions predicted by the YOLO model.
@@ -110,13 +113,23 @@ The right image shows the **overlay visualization**, where the detected noise re
 
 These results demonstrate that the model can accurately identify sparse and irregular noise artifacts while preserving the underlying spectral structure.
 
-<img width="128" height="128" alt="pred_mask_all" src="https://github.com/user-attachments/assets/d667826c-183d-4bd0-b83d-477936a7e13f" />
-<img width="128" height="128" alt="pred_overlay_solid" src="https://github.com/user-attachments/assets/ecb1495d-12f1-4db5-a82d-9dcb94946ca1" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d667826c-183d-4bd0-b83d-477936a7e13f" width="40%" />
+  <img src="https://github.com/user-attachments/assets/ecb1495d-12f1-4db5-a82d-9dcb94946ca1" width="40%" />
+</p>
+
+<p align="center">
+  <em>Left: Binary mask. Right: Overlay visualization of detected noise regions.</em>
+</p>
 
 ## Deployment in Apple Xcode Projects
-We are actively integrating the Spectra X model into our Apple Xcode-based applications. The model is continuously updated and maintained as part of our ongoing development.
+We are actively integrating the Spectra X model and YOLO model into our Apple Xcode-based applications. The model is continuously updated and maintained as part of our ongoing development.
 
 For more information, please visit our GitHub repository:
+
+https://github.com/hudongsheng-debug/FITSQuickLook
+
+https://github.com/hudongsheng-debug/-FITS-QuickLook-Mobile 
 
 ## Open-Source and Project Integration
 
