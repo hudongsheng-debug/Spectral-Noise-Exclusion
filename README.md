@@ -53,7 +53,7 @@ This repository includes two types of data folders:
 This folder contains **YOLO-style annotation data** for noise localization.
 
 - Images: spectral image patches  
-- Labels: corresponding YOLO-format annotation files (bounding boxes of noise regions)  
+- Labels: corresponding YOLO-format annotation files for noise localization
 - Overlay: visualization images showing annotated noise regions  
 
 These data are used for **object detection tasks**, where the goal is to locate noise regions in spectral images.
@@ -133,7 +133,6 @@ https://github.com/hudongsheng-debug/-FITS-QuickLook-Mobile
 
 ## Open-Source and Project Integration
 
-The proposed method has been integrated into a practical application and is under continuous development and optimization.
 
 Due to its integration with real-world projects, certain components — including the full training datasets, complete model weights, and the full training pipeline — are not publicly released. The materials provided in this repository, including the methodology, sample data, and partial pretrained models, are intended to support understanding and reproducibility of the core approach.
 
